@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: url('../../assets/images/stadium1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 50vh;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+header h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
+header::after {
+    content: '';
+    position: absolute;
+
+    background-color: rgba(0,0,0,0.5), rgba(0,0,0,0.5);
+}
