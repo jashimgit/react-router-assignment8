@@ -1,0 +1,10 @@
+span a {
+    font-size: 35px !important;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 5px;;
+}
+span a:hover {
+    color: tomato;
+}
