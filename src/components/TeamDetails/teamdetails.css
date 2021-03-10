@@ -1,3 +1,22 @@
+.detailPageBanner {
+    background: url('../../assets/images/stadium2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 50vh;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+.detailPageBanner img {
+    position: absolute;
+    height: 100px;
+    width: 20vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 span a {
     font-size: 35px !important;
     color: #fff;

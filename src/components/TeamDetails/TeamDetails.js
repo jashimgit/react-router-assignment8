@@ -18,9 +18,11 @@ const TeamDetails = () => {
     let teamImage;
 
 
+
     useEffect(() => {
         if (teamId) {
             const url = `https://www.thesportsdb.com/api/v1/json/1/lookupteam.php?id=${teamId}`;
+
             fetch(url)
                 .then(res => res.json())
                 .then(data => setTeamdata(data.teams))
@@ -35,12 +37,12 @@ const TeamDetails = () => {
         teamImage = femaleImage;
     }
 
-
+    let imageUrl = teamdata[0]?.strTeamLogo;
     return (
         <div>
-            <header>
-                <h3>Quick BD TEAM</h3>
-            </header>
+            <div className="detailPageBanner">
+                <img src={imageUrl} alt="" />
+            </div>
             <div className="container">
                 <div className="row">
                     <div className="col-sm-12">
