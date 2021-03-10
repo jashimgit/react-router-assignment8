@@ -11,10 +11,6 @@ const Home = () => {
             .then(data => setAllTeams(data.teams));
     }, []);
 
-    // console.log(allTeams.teams[0].idTeam);
-
-    // allTeams.map(t => console.log(t.idTeam))
-
     return (
         <div>
             <header>

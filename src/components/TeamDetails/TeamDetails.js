@@ -25,9 +25,8 @@ const TeamDetails = () => {
                 .then(res => res.json())
                 .then(data => setTeamdata(data.teams))
         }
-
     }, [teamId])
-    // console.log(teamdata.strDescriptionEN)
+
 
     // check for male or female team 
     if (teamdata[0]?.strGender === "Male") {
