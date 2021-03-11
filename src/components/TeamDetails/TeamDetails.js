@@ -30,6 +30,8 @@ const TeamDetails = () => {
         }
     }, [teamId])
 
+    // const { strTeam } = teamdata[0];
+    // console.log(idTeam, strTeam);
 
     // check for male or female team 
     if (teamdata[0]?.strGender === "Male") {
