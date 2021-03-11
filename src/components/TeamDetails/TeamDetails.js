@@ -11,6 +11,7 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import './teamdetails.css';
 import maleImage from '../../assets/team-photo/male.png';
 import femaleImage from '../../assets/team-photo/female.png';
+import { Link } from 'react-router-dom';
 
 const TeamDetails = () => {
     const { teamId } = useParams();
@@ -38,6 +39,9 @@ const TeamDetails = () => {
     }
 
     let imageUrl = teamdata[0]?.strTeamLogo;
+    const facebookLink = teamdata[0]?.strFacebook;
+    const twitterLink = teamdata[0]?.strTwitter;
+    const instaGramLink = teamdata[0]?.strInstagram;
     return (
         <div>
             <div className="detailPageBanner">
@@ -74,14 +78,15 @@ const TeamDetails = () => {
                     <div className="social-icon d-flex justify-content-center text-white">
 
                         <span>
-                            <a href={teamdata[0]?.strFacebook} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faFacebook} /></a>
+                            <a href={`https://${facebookLink}`} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faFacebook} /></a>
                         </span>
                         <span>
-                            <a href={teamdata[0]?.strTwitter} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faTwitter} /></a>
+                            <a href={`https://${twitterLink}`} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faTwitter} /></a>
                         </span>
                         <span>
-                            <a href="instagram.com" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faInstagram} /></a>
+                            <a href={`https://${instaGramLink}`} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faInstagram} /></a>
                         </span>
+
 
 
                     </div>
