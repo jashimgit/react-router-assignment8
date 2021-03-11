@@ -6,7 +6,7 @@ const Nav = () => {
         <nav className='navbar navbar-expand-lg navbar-dark bg-dark myNavColor' >
             <div className='container'>
                 <a className='navbar-brand' href='/'>
-                    Quick Team BD
+                    Quick BD Team
 				</a>
                 <button
                     className='navbar-toggler'
